@@ -1,7 +1,7 @@
 import requests
 import json
 
-API_KEY = "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"  # Replace with your OpenRouter key
+API_KEY = "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"  
 MODEL = "deepseek/deepseek-r1:free"
 
 headers = {
