@@ -9,7 +9,12 @@ from sentence_transformers import SentenceTransformer
 # -----------------------------
 # CONFIGURATION
 # -----------------------------
-API_KEY = "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"  # Replace with your OpenRouter key
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 MODEL = "deepseek/deepseek-r1:free"
 MAX_CONTEXT_LEN = 900   # Reduce token size for faster responses
 TOP_K_RESULTS = 2       # Retrieve only top 2 chunks for speed
